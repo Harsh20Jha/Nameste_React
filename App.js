@@ -1,3 +1,6 @@
+ import React from "react";
+ import ReactDOM from "react-dom/client";
+ 
  // Updated html through JS 
  const heading = document.createElement('h1'); // create h1 element
  heading.innerHTML = "Hello world from js"; // update text in h1
