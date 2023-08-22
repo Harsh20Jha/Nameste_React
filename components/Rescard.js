@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {RES_IMAGE} from '../utils/constants'
 const Rescard = (props) => {
   // const {name, cuisines} = props;
   const {resData} = props;
@@ -15,16 +15,16 @@ const Rescard = (props) => {
   
   
     return (    
-        
+        <>        
         <div className='rescard'>
-          <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}></img>
+          <img src={RES_IMAGE+cloudinaryImageId}></img>
           <h3>{name}</h3>
           <h3>{cuisines.join(", ")}</h3>
           <h3>{avgRating} stars</h3>
           <h3>{costForTwo / 100} For 2</h3>
           <h3>{deliveryTime} minuts</h3>
         </div>
-    
+        </>
     )
   };
   

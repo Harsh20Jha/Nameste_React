@@ -27,5 +27,22 @@ React Components-
 * Class based component 
 * Functional components
 
-// Config driven UI
+Namaste Food
+/**
 
+Two types of Export/Import
+
+Default Export/Import
+export default Component; import Component from "path";
+
+Named Export/Import - If need to export multiple const from a file use named export
+export const Component; import {Component} from "path";
+
+React Hooks
+(Normal JS utility functions)
+// Whenever a state variable changes react will rerandere its component
+useState() - Superpowerful State Variables in react
+useEffect()
+
+React fiber Architecture [Finding out the diff and updating the UI]
+//https://github.com/acdlite/react-fiber-architecture
